@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    
+    android:fillViewport="true">
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/prof"
+    android:paddingBottom="100dp"
+    android:weightSum="11"
+    android:background="@color/white"
+   android:padding="10dp"
+    >
+
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/close"
+        android:background="@drawable/close"
+        android:layout_gravity="right"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Looking_For"
+        android:textSize="15dp"
+
+        android:layout_weight="1"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+
+        android:gravity="center"
+        android:layout_weight="1">
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:text="@string/Bride"
+        android:textAllCaps="false"
+        android:textSize="13dp"
+        android:layout_marginRight="20dp"
+
+        android:background="@drawable/button"
+
+        android:id="@+id/bridebutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/groombutton"
+        android:layout_toStartOf="@+id/groombutton"
+        android:layout_weight="0.25" />
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:textSize="13dp"
+        android:text="@string/Groom"
+        android:textAllCaps="false"
+        android:layout_marginRight="20dp"
+        android:id="@+id/groombutton"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/many"
+        android:layout_toEndOf="@+id/many"
+        android:layout_weight="0.25"
+          android:background="@drawable/button"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:textSize="13dp"
+        android:text="@string/Any"
+        android:layout_marginRight="20dp"
+        android:textAllCaps="false"
+        android:id="@+id/anybutton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.25"
+         android:background="@drawable/button" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Age"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+
+       >
+
+
+
+        <fiveexceptions.com.m01sbcm.lib.RangeSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/view"
+            android:layout_alignTop="@+id/age"
+            android:layout_toRightOf="@+id/age"
+            android:layout_toEndOf="@+id/age"
+
+            />
+
+
+          </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Location"
+        android:layout_weight="1"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_below="@+id/mpartial"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:background="@drawable/edittextshapegray"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:imeActionLabel="Done"
+        android:singleLine="true"
+
+        android:ems="10">
+        <requestFocus />
+    </AutoCompleteTextView>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Education"
+        android:textSize="15dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:background="@drawable/edittextshapegray"
+        >
+
+
+
+        <Spinner
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/spinnereducation"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/day"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+            />
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@mipmap/drop"
+            android:id="@+id/imageeducation"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:background="@drawable/edittextshapegray"
+        >
+
+
+
+        <Spinner
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/edustream"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/day"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+             />
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@mipmap/drop"
+            android:id="@+id/imageeducationstream"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Profession"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:background="@drawable/edittextshapegray"
+        >
+
+
+
+        <Spinner
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/profession"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/day"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+             />
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@mipmap/drop"
+            android:id="@+id/imageprofession"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:background="@drawable/edittextshapegray"
+        >
+
+
+
+        <Spinner
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/profstream"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/day"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+           />
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@mipmap/drop"
+            android:id="@+id/imageprofessionstram"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Manglic"
+        android:textSize="15dp"
+
+        android:layout_below="@+id/profstream"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"/>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="1dp">
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:text="@string/Yes"
+            android:textAllCaps="false"
+
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:id="@+id/myes"
+            android:textSize="13dp"
+            android:layout_alignTop="@+id/mno"
+            android:layout_toLeftOf="@+id/mno"
+            android:layout_toStartOf="@+id/mno"
+            android:background="@drawable/button" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:text="@string/No"
+            android:textAllCaps="false"
+            android:layout_marginRight="8dp"
+
+            android:layout_weight="1"
+            android:id="@+id/mno"
+            android:textSize="13dp"
+            android:layout_below="@+id/profstream"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:text="@string/Partial"
+            android:textAllCaps="false"
+            android:layout_marginRight="8dp"
+
+            android:layout_weight="1.75"
+            android:id="@+id/mpartial"
+            android:textSize="13dp"
+            android:layout_below="@+id/mno"
+            android:layout_alignRight="@+id/mno"
+            android:layout_alignEnd="@+id/mno"
+            android:layout_alignLeft="@+id/many"
+            android:layout_alignStart="@+id/many"
+            android:background="@drawable/button" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:text="@string/Any"
+            android:textAllCaps="false"
+
+            android:textSize="13dp"
+            android:id="@+id/many"
+            android:layout_below="@+id/profstream"
+            android:layout_toLeftOf="@+id/myes"
+            android:layout_toStartOf="@+id/myes"
+            android:background="@drawable/button"
+            android:layout_weight="1.25" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Region"
+        android:textSize="15dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/mpartial"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:background="@drawable/edittextshapegray"
+        >
+
+
+
+        <Spinner
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/spinnerrigion"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/day"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+             />
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@mipmap/drop"
+            android:id="@+id/imagrigion"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Search"
+        android:textSize="13dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        android:layout_marginTop="15dp"
+        android:background="@color/mehroon"
+        android:layout_marginBottom="50dp"
+
+        android:id="@+id/search"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1" />
+
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.Passcode">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05">
+        </LinearLayout>
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Enter_passcode"
+        android:layout_marginBottom="10px"
+        android:textSize="20sp"
+        />
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/passcode"
+            android:textSize="15dp"
+            android:ems="10"
+
+            android:id="@+id/passcode"
+            android:background="@drawable/edittextshapegray"
+            android:paddingTop="@dimen/padding_dim2"
+            android:paddingBottom="@dimen/padding_dim2"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"></LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/submit_passcode_btn"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:background="#ae0e00"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="87dp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

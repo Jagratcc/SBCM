@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".Activity.SIGNUP">
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10">
+
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Username"
+            android:textSize="15dp"
+            android:id="@+id/username"
+            android:imeActionLabel="Done"
+            android:singleLine="true"
+            android:background="@drawable/edittextshapegray"
+            android:paddingTop="@dimen/padding_dim2"
+            android:paddingBottom="@dimen/padding_dim2"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"></LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Mobileno"
+            android:textSize="15dp"
+            android:imeActionLabel="Done"
+            android:singleLine="true"
+            android:id="@+id/mobile"
+            android:background="@drawable/edittextshapegray"
+            android:paddingTop="@dimen/padding_dim2"
+            android:inputType="phone"
+            android:ems="10"
+            android:paddingBottom="@dimen/padding_dim2"
+            android:layout_weight="0.02"
+            android:layout_below="@+id/imageView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.10"></LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/Password"
+        android:textSize="15dp"
+        android:imeActionLabel="Done"
+        android:singleLine="true"
+        android:ems="10"
+        android:id="@+id/password"
+        android:background="@drawable/edittextshapegray"
+        android:paddingTop="@dimen/padding_dim2"
+        android:paddingBottom="@dimen/padding_dim2"
+        android:layout_weight="0.02"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"></LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SignUp_button"
+        android:textAllCaps="false"
+        android:id="@+id/button2"
+        android:textColor="#ffffff"
+        android:background="#ae0e00"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="87dp"
+        android:layout_gravity="center_horizontal" />
+
+
+
+
+</LinearLayout>

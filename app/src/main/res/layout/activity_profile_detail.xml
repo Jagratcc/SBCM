@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">     <!--        1      -->
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edittextshapeline">         <!--        1.1      -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">         <!--        1.1.1     -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@color/mehroon"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:id="@+id/profile_toolbar_title" />
+
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/pinButton"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/hrt"
+                android:clickable="true"
+                android:layout_alignBottom="@+id/newssearch"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+
+
+    <!--        1.1.1     -->
+
+
+</LinearLayout>                                  <!--        1.1      -->
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id">
+
+
+        </com.google.android.gms.ads.AdView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+
+            android:background="@drawable/edittextshapeline"><!--        1.2      -->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+
+
+
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="151dp"
+                android:layout_height="132dp"
+                android:id="@+id/imageView3"
+                android:padding="10dp"
+                android:src="@drawable/loading"
+                android:layout_below="@+id/toolbar"
+                android:layout_toLeftOf="@+id/fathername"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>                                  <!--        1.2      -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittextshapeline"
+           >         <!--        1.3      -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp">         <!--        1.3.1      -->
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Father_Name"
+                    android:textSize="15dp"
+                    android:textColor="@color/mehroon"
+
+                    android:layout_below="@+id/imageView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                   android:layout_weight=".8" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="raja ram rathore"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/fathername"
+                    android:layout_above="@+id/DATEOFBIRTH"
+                    android:layout_alignRight="@+id/textView35"
+                    android:layout_alignEnd="@+id/textView35"
+                    android:layout_weight="1.2"/>
+
+
+
+
+
+
+            </LinearLayout>                                  <!--        1.3.1      -->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="10dp">         <!--        1.3.2      -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Mother_Tounge"
+                    android:textSize="15dp"
+
+                    android:textColor="@color/mehroon"
+
+                    android:layout_weight=".8" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="katirina kaif"
+                    android:textSize="15dp"
+                    android:layout_weight="1.2"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/mincome"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername"
+                    android:paddingBottom="10dp"/>
+
+
+            </LinearLayout>                                   <!--        1.3.2     -->
+
+
+
+        </LinearLayout>                                  <!--        1.3      -->
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittextshapeline"
+           >         <!--        1.4      -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                 android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp">         <!--        1.4.1     -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Date_Of_Birth"
+                    android:textSize="15dp"
+
+                    android:layout_weight=".925"
+                    android:textColor="@color/mehroon" />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="|"
+                    android:textColor="#a8a8a8"
+                    android:textSize="15dp"
+
+
+                    android:id="@+id/textView2"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Birth_City"
+                    android:textSize="15dp"
+                    android:textColor="@color/mehroon"
+                    android:paddingLeft="20dp"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername"
+                    android:layout_weight="1.125"/>
+
+
+            </LinearLayout>                                  <!--        1.4.1     -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+
+                android:layout_marginLeft="10dp">         <!--        1.4.2     -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium"
+                    android:textSize="15dp"
+                    android:paddingRight="10dp"
+
+                    android:id="@+id/DATEOFBIRTH"
+                    android:layout_below="@+id/ccc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight=".925" />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="|"
+                    android:textSize="15dp"
+                    android:textColor="#a8a8a8"
+                    android:id="@+id/textView15"
+                     />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:textSize="15dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/CITY"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1.125" />
+
+
+            </LinearLayout>
+
+            <!--        1.4.2     -->
+
+
+        </LinearLayout>                                  <!--        1.4      -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittextshapeline"
+
+           >         <!--        1.5     -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp">         <!--        1.5.1     -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Height"
+                    android:textSize="15dp"
+
+                    android:paddingRight="10dp"
+                    android:textColor="@color/mehroon"
+                    android:layout_below="@+id/ccc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight=".925"
+                    />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="|"
+                    android:textSize="15dp"
+                    android:textColor="#a8a8a8"
+
+                    android:id="@+id/textView25"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Complex"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/mehroon"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername"
+                    android:layout_weight="1.125"
+
+                                  />
+
+
+            </LinearLayout>                                  <!--        1.5.1     -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+
+
+                android:layout_marginLeft="10dp">         <!--        1.5.2     -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium"
+                    android:textSize="15dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/hight"
+                    android:layout_weight=".925"
+                    android:layout_below="@+id/ccc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                   />
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="|"
+                    android:textSize="15dp"
+                    android:id="@+id/textView26"
+                    android:textColor="#a8a8a8"
+                   />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:textSize="15dp"
+                    android:layout_weight="1.125"
+                    android:paddingLeft="20dp"
+
+                    android:id="@+id/COMPLEX"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername"
+                    android:layout_marginBottom="5dp"
+                   />
+
+
+
+            </LinearLayout>                                 <!--        1.5.2     -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>                                  <!--        1.5     -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittextshapeline"
+
+
+            >         <!--        1.6    -->
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                >         <!--        1.5.1     -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Sub_Cast"
+                    android:paddingRight="10dp"
+                    android:textSize="15dp"
+
+                    android:textColor="@color/mehroon"
+                    android:layout_below="@+id/ccc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight=".925"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="|"
+                    android:id="@+id/textView33"
+                    android:textColor="#a8a8a8"
+                    android:textSize="15dp"
+                     />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Manglic"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    android:layout_weight="1.125"
+                    android:textColor="@color/mehroon"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername" />
+
+
+            </LinearLayout>                                  <!--        1.5.1     -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+               >         <!--        1.5.2     -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp"
+
+
+                    android:layout_weight=".925"
+                    android:id="@+id/cast"
+                    android:layout_below="@+id/ccc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="   |"
+                    android:id="@+id/textView31"
+                    android:textColor="#a8a8a8"
+                    android:textSize="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:textSize="15dp"
+                    android:layout_weight="1.125"
+                    android:paddingLeft="20dp"
+                    android:id="@+id/manglik"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+
+            </LinearLayout>                                 <!--        1.5.2     -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>                                  <!--        1.6    -->
+
+
+        <!--        1.7    -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittextshapeline">         <!--        1.8    -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginLeft="10dp">         <!--        1.5.1     -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Education"
+                    android:textSize="15dp"
+                    android:textColor="@color/mehroon"
+                    android:layout_below="@+id/ccc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                   android:layout_weight=".925"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="complex"
+                    android:textSize="15dp"
+                    android:id="@+id/education"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername"
+                    android:layout_weight="1.175"/>
+
+
+            </LinearLayout>                                  <!--        1.5.1     -->
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                >         <!--        1.5.1     -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Income"
+                    android:textSize="15dp"
+                    android:textColor="@color/mehroon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/ccc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight=".925" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="complex"
+                    android:textSize="15dp"
+                    android:id="@+id/income"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername"
+                    android:layout_weight="1.175"/>
+
+
+            </LinearLayout>                                  <!--        1.5.1     -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">         <!--        1.5.1     -->
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/Profession"
+                    android:textSize="15dp"
+                    android:textColor="@color/mehroon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/ccc"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight=".925" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="complex"
+                    android:textSize="15dp"
+                    android:layout_weight="1.175"
+                    android:id="@+id/profession"
+                    android:layout_below="@+id/fathername"
+                    android:layout_alignLeft="@+id/fathername"
+                    android:layout_alignStart="@+id/fathername"
+                    android:layout_marginBottom="10dp"/>
+
+
+            </LinearLayout>                                  <!--        1.5.1     -->
+
+
+
+
+        </LinearLayout>                                  <!--        1.8   -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/edittextshapeline">         <!--        1.9   -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Address"
+                android:textSize="15dp"
+                android:textColor="@color/mehroon"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/textView44"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/address"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/textView57"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>                                  <!--        1.9   -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edittextshapeline"
+            android:weightSum="2"
+            
+            >         <!--        1.7    -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Contact"
+                android:textSize="15dp"
+                android:textColor="@color/mehroon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".925"
+
+                android:layout_below="@+id/manglik1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textSize="15dp"
+                android:layout_weight="1.175"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+
+                android:id="@+id/contect"
+                android:layout_below="@+id/textView32"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:background="@drawable/edittextshapeline">         <!--        1.10    -->
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Description"
+
+                android:textSize="15dp"
+                android:textColor="@color/mehroon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/address"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+
+                android:id="@+id/exception"
+                android:textSize="15dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/textView59"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:background="@drawable/edittextshapeline">         <!--        1.10    -->
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Source"
+
+                android:textSize="15dp"
+                android:textColor="@color/mehroon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/address"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+
+                android:id="@+id/sourceid"
+                android:textSize="15dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/textView59"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>           <!--        1      -->
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

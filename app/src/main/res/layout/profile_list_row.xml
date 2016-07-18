@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:weightSum="5"
+    >
+
+
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_img_view"
+            android:layout_gravity="right"
+            android:src="@drawable/loading"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingRight="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+
+
+            />
+
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="7dp"
+        android:layout_weight="5"
+       >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/id"
+                android:layout_alignParentTop="true"
+                android:layout_weight="2"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Manglik"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:paddingRight="10dp"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/mangalik"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/name"
+                android:layout_weight="0"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/name"
+            android:textSize="@dimen/hading_text_size"
+            android:textColor="@color/black"
+            android:layout_below="@+id/id"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="25 yrs"
+                android:maxLength="6"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/age"
+                android:layout_below="@+id/name"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="|"
+                android:textSize="@dimen/text_size"
+                android:layout_above="@+id/profession"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="fair"
+                android:textSize="@dimen/text_size"
+                android:maxLength="6"
+                android:id="@+id/compl"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:layout_above="@+id/profession"
+                android:layout_toLeftOf="@+id/mangalik"
+                android:layout_toStartOf="@+id/mangalik"
+                android:layout_weight="1"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="|"
+                android:textSize="@dimen/text_size"
+                android:layout_above="@+id/profession"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hight"
+                android:textSize="@dimen/text_size"
+                android:maxLength="7"
+                android:paddingLeft="10dp"
+                android:text="120cm"
+                android:layout_above="@+id/mincome"
+                android:layout_toLeftOf="@+id/mincome"
+                android:layout_toStartOf="@+id/mincome"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Doctor"
+               android:layout_marginRight="10dp"
+                android:textSize="@dimen/text_size"
+                android:maxLength="10"
+                android:layout_weight="1"
+                android:id="@+id/profession"
+                android:layout_below="@+id/age"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="|"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/textView29"
+                android:layout_above="@+id/profession"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size"
+                android:paddingTop="1dp"
+                android:src="@mipmap/rs"
+                android:layout_below="@+id/age"
+                android:layout_toRightOf="@+id/textView30"
+                android:layout_toEndOf="@+id/textView30"
+                android:layout_alignBottom="@+id/textView30"
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="15000/m"
+                android:textSize="@dimen/text_size"
+                android:layout_weight="1"
+                android:id="@+id/mincome"
+                android:layout_below="@+id/compl"
+                android:layout_alignRight="@+id/mangalik"
+                android:layout_alignEnd="@+id/mangalik"
+
+                android:layout_toRightOf="@+id/imageView5"
+                android:layout_toEndOf="@+id/imageView5" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:paddingRight="4dp"
+                android:textSize="@dimen/text_size"
+                android:src="@mipmap/phone"
+                android:layout_below="@+id/age"
+                android:layout_toRightOf="@+id/textView30"
+                android:layout_toEndOf="@+id/textView30"
+                android:layout_alignBottom="@+id/textView30" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="99999999900"
+                android:textSize="@dimen/text_size"
+                android:maxLength="10"
+                android:id="@+id/mobileno"
+                android:layout_below="@+id/profession"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_weight="1"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="|"
+                android:textSize="@dimen/text_size"
+                android:layout_above="@+id/profession"
+                android:layout_centerHorizontal="true"
+
+               />
+
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size"
+                android:src="@mipmap/loc"
+                android:layout_below="@+id/age"
+                android:layout_toRightOf="@+id/textView30"
+                android:layout_toEndOf="@+id/textView30"
+                android:layout_alignBottom="@+id/textView30"
+               />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="medium"
+                android:textSize="@dimen/text_size"
+                android:maxLength="8"
+                android:id="@+id/address"
+                android:layout_below="@+id/mincome"
+                android:layout_alignLeft="@+id/mincome"
+                android:layout_alignStart="@+id/mincome"
+                android:layout_weight="1"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#cccccc"
+        android:textSize="@dimen/text_size"
+        android:layout_below="@+id/nolike"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</android.support.v7.widget.CardView>

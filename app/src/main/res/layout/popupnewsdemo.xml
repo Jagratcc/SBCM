@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fillViewport="true">
+
+
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="9"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+
+
+    android:id="@+id/news"
+    android:paddingBottom="10dp"
+    android:background="@color/white"
+    >
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/close"
+        android:background="@drawable/close"
+        android:layout_gravity="right"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Added_Since"
+
+        android:id="@+id/textView6"
+        android:paddingTop="10dp"
+
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_toStartOf="@+id/search"
+        android:layout_toLeftOf="@+id/search" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+
+        android:background="@drawable/edittextshapegray">
+
+    <EditText
+        android:layout_width="252dp"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/daybefore"
+        android:textColor="#ccc"
+        android:textSize="15dp"
+        android:hint="@string/Enter_Number_Of_Days_Back"
+        android:textColorHint="@color/black"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/region"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignStart="@+id/search"
+        android:background="@color/white"
+
+
+
+
+        />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Location"
+        android:textSize="15dp"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/regionnews"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp"
+        />
+
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:imeActionLabel="Done"
+        android:singleLine="true"
+        android:background="@drawable/edittextshapegray"
+        android:ems="10"
+       >
+
+        </AutoCompleteTextView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Source"
+
+        android:textSize="15dp"
+
+        android:id="@+id/dis"
+       android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView11"
+        android:layout_toLeftOf="@+id/locati"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="5"
+        android:layout_weight="0.07"
+        android:background="@drawable/edittextshapegray"
+        >
+
+
+
+        <Spinner
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/sourcenews"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/day"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+             />
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@mipmap/drop"
+            android:id="@+id/sourceimag"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Region"
+
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/textView9"
+        android:layout_alignTop="@+id/region"
+        android:layout_toLeftOf="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="5"
+        android:layout_weight="0.03"
+        android:background="@drawable/edittextshapegray"
+        >
+
+
+
+        <Spinner
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:id="@+id/regionenews"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/day"
+            android:background="@color/white"
+            android:layout_margin="1dp"
+
+            android:layout_alignLeft="@+id/search"
+            android:layout_alignStart="@+id/search"
+             />
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="@mipmap/drop"
+            android:id="@+id/regionimg"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Search"
+        android:textAllCaps="false"
+
+        android:id="@+id/search"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/mehroon"
+        android:textColor="@color/white"/>
+
+
+
+
+
+</LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fiveexceptions.com.m01sbcm">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:name="fiveexceptions.com.m01sbcm.sync.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+           <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+          <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+         <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.EventDetail"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.ProfileDetail"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.NewsDetail"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.CommentDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+
+        </activity>
+
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.SignUp"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.LikeList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.Favourite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.Passcode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.Contact"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.Fullscreenimage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.AdvanceSearchProf"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.AdvSearchEvent"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.AdvSearchNews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.FullSizeImageEvent"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="fiveexceptions.com.m01sbcm.activities.NewsFullSIzeImage"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+
+
+    </application>
+
+</manifest>
