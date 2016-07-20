@@ -10,7 +10,7 @@
 
 
     <application
-        android:name=".sync.MyApplication"
+        android:name="fiveexceptions.com.m01sbcm.sync.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
@@ -18,7 +18,7 @@
         android:theme="@style/AppTheme"
         >
         <activity
-            android:name=".activities.Splash"
+            android:name="fiveexceptions.com.m01sbcm.activities.Splash"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -47,26 +47,26 @@
             android:value="@string/facebook_app_id" />
 
         <activity
-            android:name=".activities.EventDetail"
+            android:name="fiveexceptions.com.m01sbcm.activities.EventDetail"
 
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activities.ProfileDetail"
+            android:name="fiveexceptions.com.m01sbcm.activities.ProfileDetail"
 
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activities.NewsDetail"
+            android:name="fiveexceptions.com.m01sbcm.activities.NewsDetail"
 
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activities.CommentDetail"
+            android:name="fiveexceptions.com.m01sbcm.activities.CommentDetail"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name="fiveexceptions.com.m01sbcm.activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateAlwaysHidden"
@@ -75,45 +75,45 @@
         </activity>
 
         <activity
-            android:name=".activities.SignUp"
+            android:name="fiveexceptions.com.m01sbcm.activities.SignUp"
 
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activities.LikeList"
+            android:name="fiveexceptions.com.m01sbcm.activities.LikeList"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.Favourite"
+            android:name="fiveexceptions.com.m01sbcm.activities.Favourite"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.Login"
+            android:name="fiveexceptions.com.m01sbcm.activities.Login"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.Passcode"
+            android:name="fiveexceptions.com.m01sbcm.activities.Passcode"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.Contact"
+            android:name="fiveexceptions.com.m01sbcm.activities.Contact"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.Fullscreenimage"
+            android:name="fiveexceptions.com.m01sbcm.activities.Fullscreenimage"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.AdvanceSearchProf"
+            android:name="fiveexceptions.com.m01sbcm.activities.AdvanceSearchProf"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".activities.AdvSearchEvent"
+            android:name="fiveexceptions.com.m01sbcm.activities.AdvSearchEvent"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".activities.AdvSearchNews"
+            android:name="fiveexceptions.com.m01sbcm.activities.AdvSearchNews"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.FullSizeImageEvent"
+            android:name="fiveexceptions.com.m01sbcm.activities.FullSizeImageEvent"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".activities.NewsFullSIzeImage"
+            android:name="fiveexceptions.com.m01sbcm.activities.NewsFullSIzeImage"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/FullscreenTheme"></activity>
         <activity android:name="com.google.android.gms.ads.AdActivity"
